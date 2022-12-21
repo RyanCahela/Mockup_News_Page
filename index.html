@@ -4,10 +4,84 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/style.scss" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <div>Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <picture class="hero__image">
+        <source
+          srcset="./assets/images/image-web-3-mobile.jpg"
+          media="(max-width: 375px)"
+        />
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="web 3" />
+      </picture>
+      <h1 class="hero_heading">The Bright Future of Web 3.0?</h1>
+      <p class="hero_copy">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+      </p>
+      <a href="#" class="hero__read-more">Read More</a>
+      <div class="new">
+        <h2 class="new__heading">New</h2>
+        <ul>
+          <li>
+            <a class="new__heading" href="#">Hydrogen VS Electric Cars</a>
+            <p class="new__copy">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </li>
+          <li>
+            <a class="new__heading" href="#"> The Downsides of AI Artistry</a>
+            <p class="new__copy">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </li>
+          <li>
+            <a class="new__heading" href="#">Is VC Funding Drying Up?</a>
+            <p class="new__copy">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="other-stories">
+      <ul>
+        <li>
+          <img src="./assets/images/image-retro-pcs.jpg" />
+          <div>01</div>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </li>
+        <li>
+          <img src="./assets/images/image-top-laptops.jpg" />
+          <div>02</div>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </li>
+        <li>
+          <img src="./assets/images/image-gaming-growth.jpg" />
+          <div>03</div>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
