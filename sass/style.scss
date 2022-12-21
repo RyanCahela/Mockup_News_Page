@@ -1,9 +1,42 @@
-.title-1 {
-  background-color: #333;
-  color: tomato;
+$mobileBreakpoint: 375px;
+
+:root {
+  --almost-white: #fffdfa;
+  --dark-space-blue: #00001a;
+  --gunmetal: #5e607a;
+  --light-vermillion: #f15d51;
+  --silver: #c5c6ce;
+  --yellow: #e9aa52;
 }
 
 picture,
 img {
   width: 100%;
+}
+
+.body {
+  background-color: var(--almost-white);
+  color: var(--gunmetal);
+}
+
+.header {
+  &__nav-mobile {
+    display: block;
+  }
+
+  &__nav-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $mobileBreakpoint) {
+  .header {
+    &__nav-mobile {
+      display: none;
+    }
+
+    &__nav-desktop {
+      display: block;
+    }
+  }
 }
